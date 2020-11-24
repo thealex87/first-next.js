@@ -1,0 +1,30 @@
+section.header header {
+  background-color: $white;
+  min-height: rem(90px);
+
+  nav {
+    background-color: $white;
+    transition: background-color ease .2s;
+
+    .navbar-brand img {
+      max-height: rem(65px);
+    }
+
+    .navbar-nav .nav-link {
+      color: $colorLink;
+
+      &:hover {
+        color: $colorPrimary;
+      }
+    }
+
+    &.shrink {
+      background-color: $colorHeaderShrink;
+
+      .navbar-nav .nav-link {
+        color: $white;
+      }
+    }
+  }
+  
+}

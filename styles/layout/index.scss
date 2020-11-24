@@ -1,0 +1,55 @@
+@import 'mixin';
+@import 'header';
+@import 'footer';
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: gray('100');
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  min-height: 100%;
+}
+
+/* Set footer to bottom */
+body > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.text-alternative {
+  color: $colorAlternative;
+}
+
+.badge-alternative {
+  background-color: $colorAlternative;
+  color: $white;
+}
+
+/* Custom scrollBar to larger screen */
+@include media-breakpoint-up(xs) {
+  .overflow-auto {
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+  
+    &:hover {
+      &::-webkit-scrollbar {
+        &-track {
+          background-color: gray(200);
+        }
+        &-thumb {
+          background-color: gray(300);
+    
+          &:hover {
+            background-color: $colorPrimary;
+          }
+        }
+      }
+    }
+  }
+}

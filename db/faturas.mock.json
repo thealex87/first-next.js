@@ -1,0 +1,37 @@
+{
+  "count": 6,
+  "items": [
+    {
+      "id": 1,
+      "reference": "2020-12-01",
+      "dueDate": "2021-01-05",
+      "consumedBand": 2377,
+      "cost": { "value": 41.19, "currency": "R$" },
+      "status": { "code": 1, "name": "Aberta" }
+    },
+    {
+      "id": 1,
+      "reference": "2020-11-01",
+      "dueDate": "2020-12-05",
+      "consumedBand": 2958,
+      "cost": { "value": 47.32, "currency": "R$" },
+      "status": { "code": 2, "name": "Paga" }
+    },
+    {
+      "id": 1,
+      "reference": "2020-10-01",
+      "dueDate": "2020-11-05",
+      "consumedBand": 3412,
+      "cost": { "value": 52.34, "currency": "R$" },
+      "status": { "code": 3, "name": "Em Atraso" }
+    },
+    {
+      "id": 1,
+      "reference": "2020-09-01",
+      "dueDate": "2020-10-05",
+      "consumedBand": 1289,
+      "cost": { "value": 28.15, "currency": "R$" },
+      "status": { "code": 4, "name": "Cancelada" }
+    }
+  ]
+}
